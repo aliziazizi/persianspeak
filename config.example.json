@@ -1,0 +1,10 @@
+{
+  "hotkey": "ctrl+alt+space",
+  "model_size": "small",
+  "device": "cpu",
+  "compute_type": "int8",
+  "language": "fa",
+  "input_device": null,
+  "sample_rate": 16000,
+  "injection_method": "paste"
+}
