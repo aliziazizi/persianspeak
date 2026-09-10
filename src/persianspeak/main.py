@@ -1,10 +1,11 @@
 import logging
+import os
 import threading
 
 import keyboard
 
 from persianspeak.audio_recorder import AudioRecorder
-from persianspeak.config import LOG_PATH, load_config
+from persianspeak.config import APP_DIR, LOG_PATH, load_config
 from persianspeak.text_injector import inject_text
 from persianspeak.transcriber import Transcriber
 from persianspeak.tray_icon import TrayIcon
@@ -74,6 +75,7 @@ class App:
 
 
 def main() -> None:
+    os.makedirs(APP_DIR, exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(message)s",
