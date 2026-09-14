@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" width="200" height="250" role="img" aria-label="نشان نوژن طب فردا">
+  <g fill="none" stroke="#e8f1f5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- تنه: دو رشته مارپیچ، اشاره به ساختار DNA -->
+    <g stroke-width="2.6">
+      <path d="M100 196V52"/>
+      <path d="M100 52c14 12 14 24 0 36s-14 24 0 36 14 24 0 36 14 24 0 36"/>
+      <path d="M100 52c-14 12-14 24 0 36s14 24 0 36-14 24 0 36-14 24 0 36"/>
+    </g>
+
+    <!-- شاخه‌ها: از پایین بزرگ به بالا کوچک -->
+    <g stroke-width="2.2" opacity=".92">
+      <path d="M100 178c-22 2-38-8-46-26 20-4 36 6 46 26z"/>
+      <path d="M100 178c22 2 38-8 46-26-20-4-36 6-46 26z"/>
+      <path d="M100 146c-19 2-33-7-40-23 17-3 31 5 40 23z"/>
+      <path d="M100 146c19 2 33-7 40-23-17-3-31 5-40 23z"/>
+      <path d="M100 114c-16 2-27-6-33-19 14-3 26 4 33 19z"/>
+      <path d="M100 114c16 2 27-6 33-19-14-3-26 4-33 19z"/>
+      <path d="M100 84c-12 1-21-5-26-15 11-2 20 3 26 15z"/>
+      <path d="M100 84c12 1 21-5 26-15-11-2-20 3-26 15z"/>
+    </g>
+
+    <!-- نوک -->
+    <path d="M100 52c0-12 4-22 0-30-4 8 0 18 0 30z" stroke-width="2.2"/>
+
+    <!-- پایه -->
+    <path d="M78 208h44" stroke-width="3"/>
+  </g>
+  <text x="100" y="236" text-anchor="middle" fill="#7e96a3"
+        font-family="Manrope, system-ui, sans-serif" font-size="13" letter-spacing="3.2">NOZHEN TEB FARDA</text>
+</svg>

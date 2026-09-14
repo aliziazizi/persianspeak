@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="تخت بیمارستانی برقی">
+  <defs>
+    <radialGradient id="bedGlow" cx="45%" cy="48%" r="58%">
+      <stop offset="0%" stop-color="#2a93a8" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#2a93a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bedPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4fc7dc" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#4fc7dc" stop-opacity=".04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" fill="#050c12"/>
+  <rect width="800" height="520" fill="url(#bedGlow)"/>
+
+  <g fill="none" stroke="#9fd9e6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- پایه ميله سرم -->
+    <g stroke-width="3">
+      <path d="M690 404V96"/>
+      <path d="M690 96c0-8 10-8 10 0v10M690 96c0-8-10-8-10 0v10"/>
+    </g>
+
+    <!-- تاج بالای تخت -->
+    <rect x="640" y="248" width="30" height="96" rx="12" stroke-width="3.5" fill="url(#bedPanel)"/>
+    <!-- تاج پایین تخت -->
+    <rect x="166" y="292" width="28" height="84" rx="12" stroke-width="3.5" fill="url(#bedPanel)"/>
+
+    <!-- تشک: بخش تخت -->
+    <path d="M206 356h316v-18a6 6 0 0 0-6-6H212a6 6 0 0 0-6 6z" stroke-width="3.5" fill="url(#bedPanel)"/>
+    <!-- تشک: پشتی بالا آمده -->
+    <path d="M524 336l112-70a6 6 0 0 1 9 5v34l-112 40z" stroke-width="3.5" fill="url(#bedPanel)"/>
+
+    <!-- خطوط تشک -->
+    <g stroke-width="2" opacity=".55">
+      <path d="M268 334v22M330 334v22M392 334v22M454 334v22"/>
+      <path d="M556 318l64-40M586 330l52-32"/>
+    </g>
+
+    <!-- نرده کناری -->
+    <g stroke-width="3">
+      <path d="M306 300h190"/>
+      <path d="M306 300v32M496 300v32M368 300v18M434 300v18"/>
+    </g>
+
+    <!-- ریموت کنترل آویزان -->
+    <g stroke-width="2.4">
+      <path d="M340 318v26"/>
+      <rect x="328" y="344" width="26" height="40" rx="7" fill="url(#bedPanel)"/>
+      <path d="M336 354h10M336 362h10M336 370h10" opacity=".7"/>
+    </g>
+
+    <!-- شاسی زیر تشک -->
+    <path d="M204 362h436a6 6 0 0 1 6 6v6a6 6 0 0 1-6 6H204a6 6 0 0 1-6-6v-6a6 6 0 0 1 6-6z" stroke-width="3.5" fill="url(#bedPanel)"/>
+
+    <!-- ستون‌های بالابر -->
+    <g stroke-width="3.5">
+      <rect x="296" y="380" width="30" height="54" rx="6" fill="url(#bedPanel)"/>
+      <rect x="516" y="380" width="30" height="54" rx="6" fill="url(#bedPanel)"/>
+    </g>
+    <g stroke-width="2" opacity=".5">
+      <path d="M302 392h18M302 402h18M522 392h18M522 402h18"/>
+    </g>
+
+    <!-- پایه -->
+    <path d="M254 434h334a8 8 0 0 1 8 8v6a8 8 0 0 1-8 8H254a8 8 0 0 1-8-8v-6a8 8 0 0 1 8-8z" stroke-width="3.5" fill="url(#bedPanel)"/>
+
+    <!-- چرخ‌ها -->
+    <g stroke-width="3">
+      <circle cx="274" cy="478" r="20"/>
+      <circle cx="274" cy="478" r="7"/>
+      <circle cx="346" cy="478" r="20"/>
+      <circle cx="346" cy="478" r="7"/>
+      <circle cx="496" cy="478" r="20"/>
+      <circle cx="496" cy="478" r="7"/>
+      <circle cx="568" cy="478" r="20"/>
+      <circle cx="568" cy="478" r="7"/>
+    </g>
+  </g>
+</svg>

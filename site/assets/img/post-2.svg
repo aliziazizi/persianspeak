@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="ارگونومی و اندازه‌گیری">
+  <defs>
+    <linearGradient id="p2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102b33"/>
+      <stop offset="100%" stop-color="#050d13"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#p2)"/>
+  <circle cx="150" cy="170" r="108" fill="#2a93a8" opacity=".12"/>
+  <g fill="none" stroke="#7fc6d8" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity=".85">
+    <!-- گوشه‌های اسکن -->
+    <path d="M66 112V92a10 10 0 0 1 10-10h20"/>
+    <path d="M204 82h20a10 10 0 0 1 10 10v20"/>
+    <path d="M234 228v20a10 10 0 0 1-10 10h-20"/>
+    <path d="M96 258H76a10 10 0 0 1-10-10v-20"/>
+    <!-- منحنی ارگونومیک -->
+    <path d="M100 216c0-40 14-58 34-58s26 14 26 30-10 26-10 40h50"/>
+    <circle cx="112" cy="126" r="16"/>
+    <!-- خط‌کش -->
+    <path d="M100 300h100M108 300v14M132 300v20M156 300v14M180 300v20"/>
+  </g>
+</svg>

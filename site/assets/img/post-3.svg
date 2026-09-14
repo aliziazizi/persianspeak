@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400" role="img" aria-label="نگهداری و ضدعفونی">
+  <defs>
+    <linearGradient id="p3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b2029"/>
+      <stop offset="100%" stop-color="#050d13"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#p3)"/>
+  <circle cx="150" cy="166" r="110" fill="#2a93a8" opacity=".12"/>
+  <g fill="none" stroke="#7fc6d8" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity=".85">
+    <!-- سپر با تیک -->
+    <path d="M150 74l62 24v52c0 46-28 78-62 90-34-12-62-44-62-90V98z"/>
+    <path d="M122 162l20 20 38-40"/>
+    <!-- قطرات ضدعفونی -->
+    <g opacity=".7">
+      <path d="M78 262c0 7-5 12-11 12s-11-5-11-12 11-18 11-18 11 11 11 18z"/>
+      <path d="M244 262c0 7-5 12-11 12s-11-5-11-12 11-18 11-18 11 11 11 18z"/>
+      <path d="M161 306c0 7-5 12-11 12s-11-5-11-12 11-18 11-18 11 11 11 18z"/>
+    </g>
+  </g>
+</svg>

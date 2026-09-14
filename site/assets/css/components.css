@@ -1,0 +1,217 @@
+/* ==========================================================================
+   کامپوننت‌های قابل استفاده مجدد
+   دکمه · آیکون‌چیپ · هدر سکشن · کارت · ناوبری اسلایدر · آواتار · آکاردئون
+   ========================================================================== */
+
+/* --------------------------------------------------------- دکمه‌ها */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: var(--r-xs);
+  font-size: 14.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .25s var(--ease), border-color .25s var(--ease),
+              transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.btn svg { width: 18px; height: 18px; flex: none; }
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.btn--primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line-2);
+}
+.btn--ghost:hover {
+  border-color: var(--accent-bright);
+  color: var(--accent-bright);
+  transform: translateY(-2px);
+}
+
+.btn--sm { padding: 9px 18px; font-size: 13px; }
+
+/* --------------------------------------------------------- آیکون‌چیپ */
+/* مربع گردشده با بوردر ظریف — امضای بصری تکرارشونده در کل صفحه */
+.ichip {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  color: var(--accent-bright);
+  background: var(--accent-dim);
+}
+.ichip svg { width: 22px; height: 22px; }
+
+.ichip--sm { width: 30px; height: 30px; border-radius: var(--r-xs); }
+.ichip--sm svg { width: 16px; height: 16px; }
+
+.ichip--lg { width: 58px; height: 58px; border-radius: var(--r); }
+.ichip--lg svg { width: 26px; height: 26px; }
+
+/* --------------------------------------------------------- هدر سکشن */
+.shead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-lg);
+  text-align: center;
+}
+.shead__title {
+  font-size: var(--fs-h2);
+  letter-spacing: -.01em;
+}
+.shead__sub {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  max-width: 62ch;
+}
+
+/* eyebrow — برچسب کوچک بالای تیتر با خط کنار */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent-bright);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.eyebrow::after {
+  content: '';
+  width: 46px;
+  height: 1px;
+  background: linear-gradient(to left, var(--accent-bright), transparent);
+}
+
+/* --------------------------------------------------------- کارت پایه */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  transition: border-color .3s var(--ease), background .3s var(--ease),
+              transform .3s var(--ease);
+}
+.card--hover:hover {
+  border-color: var(--line-accent);
+  background: var(--surface-2);
+  transform: translateY(-4px);
+}
+
+/* --------------------------------------------------------- ناوبری اسلایدر */
+.navbtn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  transition: background .25s var(--ease), transform .25s var(--ease),
+              opacity .25s var(--ease);
+}
+.navbtn:hover { background: var(--accent-hover); transform: scale(1.08); }
+.navbtn svg { width: 20px; height: 20px; }
+.navbtn[disabled] { opacity: .3; cursor: default; transform: none; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: var(--gap);
+}
+.dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: var(--r-pill);
+  background: var(--line-2);
+  transition: width .3s var(--ease), background .3s var(--ease);
+}
+.dots button[aria-current='true'] {
+  width: 26px;
+  background: var(--accent-bright);
+}
+
+/* --------------------------------------------------------- آواتار */
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  border: 1px solid var(--line-accent);
+  color: var(--accent-bright);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------- ریل اسکرول افقی */
+.rail {
+  display: flex;
+  gap: var(--gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-block: 4px;
+}
+.rail > * { scroll-snap-align: start; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rail { scroll-behavior: auto; }
+}
+
+/* --------------------------------------------------------- آکاردئون */
+.acc__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-sm);
+  width: 100%;
+  padding: 16px 22px;
+  text-align: right;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+.acc__icon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: var(--accent-bright);
+  transition: transform .3s var(--ease);
+}
+.acc__icon svg { width: 18px; height: 18px; }
+[aria-expanded='true'] .acc__icon { transform: rotate(45deg); }
+
+.acc__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .32s var(--ease);
+}
+.acc__panel[data-open='true'] { grid-template-rows: 1fr; }
+.acc__panel > div { overflow: hidden; }
+.acc__body {
+  padding: 0 22px 18px;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}

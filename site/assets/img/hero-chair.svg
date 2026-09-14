@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="760" height="560" role="img" aria-label="صندلی برقی کلینیک">
+  <defs>
+    <radialGradient id="chGlow" cx="50%" cy="46%" r="56%">
+      <stop offset="0%" stop-color="#2a93a8" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#2a93a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4fc7dc" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#4fc7dc" stop-opacity=".05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="560" fill="none"/>
+  <ellipse cx="380" cy="270" rx="330" ry="250" fill="url(#chGlow)"/>
+
+  <g fill="none" stroke="#a8dfeb" stroke-linecap="round" stroke-linejoin="round">
+    <!-- پشت‌سری -->
+    <path d="M596 126l52-26a8 8 0 0 1 11 4l10 22a8 8 0 0 1-4 10l-52 26z" stroke-width="3.5" fill="url(#chPanel)"/>
+    <path d="M592 150l14 30" stroke-width="3"/>
+
+    <!-- پشتی -->
+    <path d="M436 300l152-142a10 10 0 0 1 14 0l26 28a10 10 0 0 1 0 14L472 330z" stroke-width="4" fill="url(#chPanel)"/>
+    <g stroke-width="2" opacity=".5">
+      <path d="M492 254l38 40M532 216l38 40M572 178l38 40"/>
+    </g>
+
+    <!-- نشیمن -->
+    <path d="M272 308h198a8 8 0 0 1 8 8v20a8 8 0 0 1-8 8H272a8 8 0 0 1-8-8v-20a8 8 0 0 1 8-8z" stroke-width="4" fill="url(#chPanel)"/>
+
+    <!-- زیرپایی -->
+    <path d="M264 318l-118 34a8 8 0 0 0-6 9l4 20a8 8 0 0 0 10 6l114-32z" stroke-width="4" fill="url(#chPanel)"/>
+    <path d="M176 350l8 34" stroke-width="2.6" opacity=".6"/>
+
+    <!-- دسته -->
+    <g stroke-width="3">
+      <path d="M318 262h146a8 8 0 0 1 8 8v6a8 8 0 0 1-8 8"/>
+      <path d="M322 262v46M466 284v24"/>
+    </g>
+
+    <!-- ستون بالابر -->
+    <path d="M330 344h84v70h-84z" stroke-width="4" fill="url(#chPanel)"/>
+    <g stroke-width="2" opacity=".45">
+      <path d="M340 360h64M340 374h64M340 388h64"/>
+    </g>
+
+    <!-- پایه -->
+    <path d="M258 414h228a10 10 0 0 1 10 10v10a10 10 0 0 1-10 10H258a10 10 0 0 1-10-10v-10a10 10 0 0 1 10-10z" stroke-width="4" fill="url(#chPanel)"/>
+    <path d="M288 444l-22 40M456 444l22 40" stroke-width="4"/>
+
+    <!-- چرخ‌ها -->
+    <g stroke-width="3">
+      <circle cx="258" cy="498" r="16"/>
+      <circle cx="258" cy="498" r="5"/>
+      <circle cx="486" cy="498" r="16"/>
+      <circle cx="486" cy="498" r="5"/>
+    </g>
+
+    <!-- پدال کنترل -->
+    <g stroke-width="2.6">
+      <rect x="352" y="466" width="40" height="16" rx="6" fill="url(#chPanel)"/>
+      <path d="M372 448v18"/>
+    </g>
+  </g>
+</svg>
