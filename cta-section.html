@@ -199,32 +199,27 @@
 
         .cta-button.phone-loader {
             position: relative;
-        }
-
-        .loader-ring {
-            position: absolute;
-            inset: -8px;
-            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(100, 200, 255, 0.05), rgba(100, 200, 255, 0.05)) padding-box,
+                        conic-gradient(from 0deg, #64c8ff, #a0e4ff, #64c8ff) border-box;
             border: 2px solid transparent;
-            background: conic-gradient(from 0deg, rgba(100, 200, 255, 0.8), rgba(100, 200, 255, 0.2), rgba(100, 200, 255, 0.1)) no-repeat;
-            background-position: center;
-            animation: spinLoader 3s linear infinite;
-            pointer-events: none;
-            mask-image: radial-gradient(circle, transparent 30%, black 100%);
-            -webkit-mask-image: radial-gradient(circle, transparent 30%, black 100%);
+            animation: rotateBorder 3s linear infinite;
         }
 
-        @keyframes spinLoader {
+        @keyframes rotateBorder {
             0% {
-                transform: rotate(0deg);
+                --rotation: 0deg;
+                background: linear-gradient(90deg, rgba(100, 200, 255, 0.05), rgba(100, 200, 255, 0.05)) padding-box,
+                            conic-gradient(from 0deg, #64c8ff, #a0e4ff, #64c8ff) border-box;
             }
             100% {
-                transform: rotate(360deg);
+                --rotation: 360deg;
+                background: linear-gradient(90deg, rgba(100, 200, 255, 0.05), rgba(100, 200, 255, 0.05)) padding-box,
+                            conic-gradient(from 360deg, #64c8ff, #a0e4ff, #64c8ff) border-box;
             }
         }
 
-        .cta-button.phone-loader:hover .loader-ring {
-            animation: spinLoader 2s linear infinite;
+        .cta-button.phone-loader:hover {
+            animation: rotateBorder 1.5s linear infinite;
         }
 
         /* Responsive */
@@ -275,7 +270,6 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                     </span>
                     <span>تماس تلفنی</span>
-                    <div class="loader-ring"></div>
                 </a>
             </div>
         </div>
